@@ -1,0 +1,39 @@
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Aplikasi Catatan Nabung</title>
+         <link rel="stylesheet" href="/styles.css">
+     </head>
+     <body>
+         <div class="container">
+             <h1>Aplikasi Catatan Nabung</h1>
+             <div>
+                 <label for="period">Pilih Periode:</label>
+                 <select id="period">
+                     <option value="minggu">Per Minggu</option>
+                     <option value="bulan">Per Bulan</option>
+                     <option value="tahun">Per Tahun</option>
+                 </select>
+             </div>
+             <div>
+                 <label for="amount">Jumlah Nabung Hari Ini:</label>
+                 <input type="number" id="amount" min="20000" placeholder="Minimal 20000">
+             </div>
+             <div>
+                 <label for="source">Sumber Uang:</label>
+                 <select id="source">
+                     <option value="indodax">Indodax</option>
+                     <option value="ovo">OVO</option>
+                     <option value="pribadi">Pribadi</option>
+                 </select>
+             </div>
+             <button onclick="addSaving()">Simpan</button>
+             <div id="summary"></div>
+         </div>
+         <script src="/script.js"></script>
+     </body>
+     </html>
+     ```
+     
